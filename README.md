@@ -1,11 +1,23 @@
-# assemble [![NPM version](https://badge.fury.io/js/assemble-yaml.png)](http://badge.fury.io/js/assemble-yaml)  [![Build Status](https://travis-ci.org/assemble/assemble-yaml.png?branch=master)](https://travis-ci.org/assemble/assemble-yaml)
+# assemble-yaml [![NPM version](https://badge.fury.io/js/assemble-yaml.png)](http://badge.fury.io/js/assemble-yaml)  [![Build Status](http://github.com/assemble/assemble-yaml.png?branch=master)](http://github.com/assemble/assemble-yaml)
 
-
-```shell
-npm install assemble-yaml --save-dev
-```
+> Utility library for working with YAML front matter.
 
 Visit [Assemble's documentation](http://assemble.io) for many more examples and pointers on getting started.
+
+
+## Getting Started
+
+```shell
+npm install assemble-yaml --save
+```
+
+and use it as follows:
+
+```js
+var yfm = require('assemble-yaml');
+var data = yfm.extract("./test/fixtures/pages/complex.hbs");
+```
+
 
 ## Release History
 
@@ -13,4 +25,6 @@ Visit [Assemble's documentation](http://assemble.io) for many more examples and 
 
 ***
 
+Project authored by [Brian Woodward](https://github.com/doowb/).
 
+_This file was generated on Mon Sep 02 2013 09:44:51._

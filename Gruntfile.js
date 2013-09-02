@@ -40,10 +40,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-mocha-test');
+  grunt.loadNpmTasks('assemble-internal');
 
   grunt.registerTask('test', ['mochaTest']);
 
+  grunt.registerTask('docs', ['assemble-internal']);
+
   // Default task.
   grunt.registerTask('default', ['jshint', 'test']);
-
 };
