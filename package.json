@@ -2,10 +2,6 @@
   "name": "assemble-yaml",
   "version": "0.1.3",
   "description": "Utility library for working with YAML front matter.",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/assemble/assemble-yaml.git"
-  },
   "author": {
     "name": "Brian Woodward",
     "url": "https://github.com/doowb"
@@ -26,6 +22,10 @@
       "url": "https://github.com/assemble/assemble/blob/master/LICENSE-MIT"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/assemble/assemble-yaml.git"
+  },
   "bugs": {
     "url": "https://github.com/assemble/assemble-yaml/issues"
   },
@@ -39,7 +39,6 @@
     "grunt": "~0.4.1",
     "grunt-contrib-jshint": "~0.6.2",
     "grunt-contrib-watch": "~0.5.1",
-    "assemble-internal": "~0.2.0",
     "grunt-sync-pkg": "~0.1.0",
     "grunt-readme": "~0.1.3"
   },
@@ -49,10 +48,11 @@
   },
   "keywords": [
     "assemble",
-    "yaml front matter",
+    "front matter",
+    "jekyll",
     "metadata",
     "static site generator",
-    "jekyll",
+    "yaml front matter",
     "yaml",
     "yfm"
   ]

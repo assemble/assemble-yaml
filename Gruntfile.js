@@ -10,7 +10,7 @@ module.exports = function(grunt) {
         src: 'Gruntfile.js'
       },
       lib_test: {
-        src: ['lib/**/*.js', 'test/**/*.js']
+        src: ['lib/*.js', 'test/*.js']
       }
     },
 
@@ -44,8 +44,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-readme');
 
   grunt.registerTask('test', ['mochaTest']);
-
-  grunt.registerTask('docs', ['assemble-internal']);
 
   // Default task.
   grunt.registerTask('default', ['jshint', 'test', 'readme', 'sync']);
