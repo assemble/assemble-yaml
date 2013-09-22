@@ -1,4 +1,4 @@
-# assemble-yaml [![NPM version](https://badge.fury.io/js/assemble-yaml.png)](http://badge.fury.io/js/assemble-yaml)  [![Build Status](http://github.com/assemble/assemble-yaml.png?branch=master)](http://github.com/assemble/assemble-yaml)
+# {%= name %} [![NPM version](https://badge.fury.io/js/{%= name %}.png)](http://badge.fury.io/js/{%= name %})  [![Build Status](http://github.com/assemble/{%= name %}.png?branch=master)](http://github.com/assemble/{%= name %})
 
 > Utility library for working with YAML front matter.
 
@@ -8,13 +8,13 @@ Visit [Assemble's documentation](http://assemble.io) for many more examples and 
 ## Getting Started
 
 ```shell
-npm install assemble-yaml --save
+npm install {%= name %} --save
 ```
 
 and use it as follows:
 
 ```js
-var yfm = require('assemble-yaml');
+var yfm = require('{%= name %}');
 var data = yfm.extract("./file.hbs");
 ```
 

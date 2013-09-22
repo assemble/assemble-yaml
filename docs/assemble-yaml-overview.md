@@ -1,1 +1,0 @@
-Visit [Assemble's documentation](http://assemble.io) for many more examples and pointers on getting started.

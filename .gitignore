@@ -14,10 +14,9 @@ logs
 
 
 release
-/tmp/
-/temp/
+tmp
+temp
 
 TODO.md
 
-*.sublime-project
-*.sublime-workspace
+*.sublime-*

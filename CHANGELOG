@@ -1,3 +1,7 @@
+v0.1.2:
+  date: "2013-09-22"
+  changes:
+    - Adds grunt-readme and grunt-pkg-sync
 v0.1.0:
   date: "2013-08-11"
   changes:
