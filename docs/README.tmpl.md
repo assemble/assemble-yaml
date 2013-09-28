@@ -1,27 +1,30 @@
 # {%= name %} [![NPM version](https://badge.fury.io/js/{%= name %}.png)](http://badge.fury.io/js/{%= name %})  [![Build Status](http://github.com/assemble/{%= name %}.png?branch=master)](http://github.com/assemble/{%= name %})
 
-> Utility library for working with YAML front matter.
+> {%= description %}
 
 Visit [Assemble's documentation](http://assemble.io) for many more examples and pointers on getting started.
 
 
 ## Getting Started
+{%= _.doc('getting-started.md') %}
 
-```shell
-npm install {%= name %} --save
-```
 
-and use it as follows:
-
-```js
-var yfm = require('{%= name %}');
-var data = yfm.extract("./file.hbs");
-```
+## Methods
+{%= _.doc('methods.md') %}
 
 
 ## Release History
-
- * 2013-08-11   v0.1.0   Initial setup - Migrated from main Assemble repo
+{% _.each(changelog, function(details, version) {
+  var date = details.date;
+  if (date instanceof Date) {
+    date = grunt.template.date(new Date(date.getTime() + date.getTimezoneOffset() * 60000), 'yyyy-mm-dd');
+  }
+  print('\n * ' + [
+    date,
+    version,
+    details.changes.join(' '),
+  ].join('\u2003\u2003\u2003'));
+}); %}
 
 ***
 

@@ -1,6 +1,7 @@
 /*
  * assemble-yaml
  * https://github.com/assemble/assemble-yaml
+ *
  * Copyright (c) 2013 Brian Woodward, contributors.
  * Licensed under the MIT license.
  */
