@@ -9,6 +9,7 @@
   "undef": false,
   "boss": true,
   "eqnull": true,
+  "node": true,
   "globals": {
     "module": true,
     "exports": true,
