@@ -1,33 +1,31 @@
-# {%= name %} [![NPM version](https://badge.fury.io/js/{%= name %}.png)](http://badge.fury.io/js/{%= name %})  [![Build Status](http://github.com/assemble/{%= name %}.png?branch=master)](http://github.com/assemble/{%= name %})
+---
+username: doowb
+---
+# {%= name %} [![NPM version](https://badge.fury.io/js/{%= name %}.png)](http://badge.fury.io/js/{%= name %}) {% if (travis) { %} [![Build Status]({%= travis %}.png)]({%= travis %}){% } %}
 
 > {%= description %}
 
 Visit [Assemble's documentation](http://assemble.io) for many more examples and pointers on getting started.
 
-
 ## Getting Started
 {%= _.doc('getting-started.md') %}
-
 
 ## Methods
 {%= _.doc('methods.md') %}
 
-
+{% if (changelog) { %}
 ## Release History
-{% _.each(changelog, function(details, version) {
-  var date = details.date;
-  if (date instanceof Date) {
-    date = grunt.template.date(new Date(date.getTime() + date.getTimezoneOffset() * 60000), 'yyyy-mm-dd');
-  }
-  print('\n * ' + [
-    date,
-    version,
-    details.changes.join(' '),
-  ].join('\u2003\u2003\u2003'));
-}); %}
+{%= _.include("docs-changelog.md") %} {% } %}
+
+## Author
+
++ [github.com/{%= username %}](https://github.com/{%= username %})
++ [twitter.com/{%= username %}](http://twitter.com/{%= username %})
+
+## License
+{%= copyright %}
+{%= license %}
 
 ***
-
-Project authored by [Brian Woodward](https://github.com/doowb/).
 
 _This file was generated on Mon Sep 02 2013 09:44:51._
