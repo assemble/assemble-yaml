@@ -1,10 +1,9 @@
-
 ```shell
-npm install assemble-yaml --save
+npm install {%= name %} --save
 ```
 
 and use it as follows:
 
 ```js
-var yfm = require('assemble-yaml');
+var yfm = require('{%= name %}');
 ```
