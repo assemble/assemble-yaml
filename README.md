@@ -18,19 +18,8 @@ var yfm = require('assemble-yaml');
 
 ## Methods
 #### extract
-Extract YAML front matter and content from files.
 
-```js
-var raw = yfm.extract("./file.hbs", opts);
-```
-**Parameters**:
-
-* `String`: The file to read.
-* `Object`: The options object to pass to [js-yaml](https://github.com/nodeca/js-yaml)
-
-**Returns**:
-
-Object with three properties
+Extracts YAML front matter from files and and resturns a JSON object with the following properties:
 
 ```js
 {
@@ -38,6 +27,24 @@ Object with three properties
  "content": ""         // String. File content, stripped of YAML front matter
  "originalContent": "" // String. Both content and YAML front matter.
 }
+```
+
+```js
+var raw = yfm.extract("./file.hbs", opts);
+```
+
+#### originalContent
+
+Return YAML front matter as a JSON object.
+
+```js
+var data = yfm.extract("./file.hbs").context;
+```
+
+Alias:
+
+```js
+var data = yfm.extractJSON("./file.hbs");
 ```
 
 #### context
@@ -75,7 +82,7 @@ var data = yfm.stripYFM("./file.hbs");
  * 2013-09-27   v0.1.3   Adds extractJSON and stripYFM convenience methods. Add regex to strip extraneous newlines left over after YFM is removed from a file.
  * 2013-09-22   v0.1.2   Adds grunt-readme and grunt-pkg-sync
  * 2013-08-11   v0.1.0   Initial setup - Migrated from main Assemble repo
- 
+
 
 ## Author
 
