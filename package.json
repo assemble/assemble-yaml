@@ -49,7 +49,8 @@
     "iconv-lite": "~0.2.11",
     "chalk": "~0.2.1",
     "globule": "~0.1.0",
-    "to": "~0.2.9"
+    "to": "~0.2.9",
+    "sort-object": "0.0.2"
   },
   "keywords": [
     "assemble",
