@@ -1,6 +1,6 @@
 {
   "name": "assemble-yaml",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "repo": "https://github.com/assemble/assemble-yaml.git",
   "main": [
     "./lib"
