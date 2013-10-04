@@ -75,7 +75,7 @@ var data = yfm.stripYFM("./file.hbs");
  * 2013-09-27   v0.1.3   Adds extractJSON and stripYFM convenience methods. Add regex to strip extraneous newlines left over after YFM is removed from a file.
  * 2013-09-22   v0.1.2   Adds grunt-readme and grunt-pkg-sync
  * 2013-08-11   v0.1.0   Initial setup - Migrated from main Assemble repo
-
+ 
 
 ## Author
 
