@@ -1,6 +1,6 @@
 {
   "name": "assemble-yaml",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Utility library for working with YAML front matter. Works with or without Assemble.",
   "author": {
     "name": "Brian Woodward",
