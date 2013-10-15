@@ -28,7 +28,7 @@ describe('Reading From Files', function() {
       "version": 2
     },
     originalContent: "---\nfoo: bar\nversion: 2\n---\n\n<span class=\"alert alert-info\">This is an alert</span>\n",
-    content: "<span class=\"alert alert-info\">This is an alert</span>\n"
+    content: "\n\n<span class=\"alert alert-info\">This is an alert</span>\n"
   };
 
 
@@ -80,7 +80,7 @@ describe('Reading From Strings', function() {
       "version": 2
     },
     originalContent: "---\nfoo: bar\nversion: 2\n---\n\n<span class=\"alert alert-info\">This is an alert</span>\n",
-    content: "<span class=\"alert alert-info\">This is an alert</span>\n"
+    content: "\n\n<span class=\"alert alert-info\">This is an alert</span>\n"
   };
 
   it("YAML string starts with --- no content", function(done) {
